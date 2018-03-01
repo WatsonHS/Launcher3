@@ -724,6 +724,7 @@ public abstract class PagedView extends ViewGroup implements ViewGroup.OnHierarc
         super.addView(page, 0, lp);
     }
 
+
     public int getNormalChildHeight() {
         return mNormalChildHeight;
     }

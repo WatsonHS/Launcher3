@@ -604,6 +604,7 @@ public class Launcher extends Activity
         mWidgetsView.setSearchBarBounds(newBounds);
     }
 
+    //开启负一屏
     /** To be overridden by subclasses to hint to Launcher that we have custom content */
     protected boolean hasCustomContentToLeft() {
         if (mLauncherCallbacks != null) {
@@ -3498,6 +3499,14 @@ public class Launcher extends Activity
     }
 
     public View getOrCreateQsbBar() {
+        /**
+         * 去掉搜索框
+         */
+        if(true)
+        {
+            return null;
+        }
+
         if (mLauncherCallbacks != null && mLauncherCallbacks.providesSearch()) {
             return mLauncherCallbacks.getQsbBar();
         }

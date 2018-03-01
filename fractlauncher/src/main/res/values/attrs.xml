@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /* Copyright 2008, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,20 +32,20 @@
 
     <!-- Page Indicator specific attributes. -->
     <declare-styleable name="PageIndicator">
-        <attr name="windowSize" format="integer"  />
+        <attr name="windowSize" format="integer" />
     </declare-styleable>
 
     <!-- Workspace specific attributes. These attributes are used to customize
          the workspace in XML files. -->
     <declare-styleable name="Workspace">
         <!-- The first screen the workspace should display. -->
-        <attr name="defaultScreen" format="integer"  />
+        <attr name="defaultScreen" format="integer" />
         <!-- The number of horizontal cells in the CellLayout -->
-        <attr name="cellCountX" format="integer"  />
+        <attr name="cellCountX" format="integer" />
         <!-- The number of vertical cells in the CellLayout -->
-        <attr name="cellCountY" format="integer"  />
+        <attr name="cellCountY" format="integer" />
     </declare-styleable>
-    
+
     <!-- Hotseat specific attributes. These attributes are used to customize
          the hotseat in XML files. -->
     <declare-styleable name="Hotseat">
@@ -60,9 +59,9 @@
          a CellLayout view in XML files. -->
     <declare-styleable name="CellLayout">
         <!-- The width of a single cell -->
-        <attr name="cellWidth" format="dimension"  />
+        <attr name="cellWidth" format="dimension" />
         <!-- The height of a single cell -->
-        <attr name="cellHeight" format="dimension"  />
+        <attr name="cellHeight" format="dimension" />
         <!-- An override for the width and height gap to allow users to specify
              a specific size for the page using spacing instead of resolving the
              spacing from the width of the page -->
@@ -115,5 +114,14 @@
 
     <declare-styleable name="InsettableFrameLayout_Layout">
         <attr name="layout_ignoreInsets" format="boolean" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
 </resources>
